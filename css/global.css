@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --desktop-body: Inter;
+  --heading-social-l: "Silk Serif";
+
+  /* font sizes */
+  --desktop-body-size: 1.25rem;
+  --silk-desktop-body-size: 1rem;
+  --heading-social-l-size: 2rem;
+  --font-size-lgi: 1.188rem;
+  --font-size-7xl: 1.625rem;
+  --heading-lg-size: 3rem;
+  --font-size-10xl: 1.813rem;
+  --font-size-19xl: 2.375rem;
+  --font-size-5xl: 1.5rem;
+  --desktop-heading-lg-size: 1.95rem;
+  --h1-size: 2.5rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-200: #2e0c1b;
+  --color-mediumvioletred: #a12256;
+  --color-palevioletred-100: #c7477d;
+  --color-palevioletred-200: rgba(199, 71, 125, 0.09);
+  --color-deeppink: #e6347c;
+
+  /* Spacing */
+  --space-sm: 1rem;
+  --space-xs: 0.5rem;
+
+  /* Gaps */
+  --gap-21xl: 2.5rem;
+  --gap-xl: 1.25rem;
+  --gap-lg: 1.125rem;
+  --gap-17xl: 2.25rem;
+  --gap-13xl: 2rem;
+  --gap-base: 1rem;
+  --gap-38xl: 3.563rem;
+  --gap-72xl: 4.5rem;
+  --gap-95xl: 7.125rem;
+
+  /* Paddings */
+  --padding-45xl: 4rem;
+  --padding-61xl: 5rem;
+  --padding-21xl: 2.5rem;
+  --padding-xl: 1.25rem;
+  --padding-81xl: 6.25rem;
+  --padding-181xl: 12.5rem;
+  --padding-23xl: 2.625rem;
+  --padding-56xl: 4.688rem;
+  --padding-131xl: 9.375rem;
+  --padding-64xl: 5.188rem;
+  --padding-147xl: 10.375rem;
+  --padding-5xs: 0.5rem;
+  --padding-52xl: 4.438rem;
+  --padding-8xl: 1.688rem;
+  --padding-29xl: 3rem;
+  --padding-5xl: 1.5rem;
+  --padding-20xl: 2.438rem;
+  --padding-9xl: 1.75rem;
+  --padding-mid-5: 1.094rem;
+  --padding-2xl: 1.313rem;
+  --padding-77xl: 6rem;
+  --padding-129xl: 9.25rem;
+  --padding-32md: 2rem;
+  --padding-base: 1rem;
+
+  /* Border radiuses */
+  --br-13xl: 32px;
+  --br-base: 16px;
+
+  /* Effects */
+  --shadow-btn-primary: 0px 0px 6px #a12256, 0px 2px 16px #e6347c;
+  --card-name: 0px 0px 6px #ba2f80, 0px 2px 28px #4d2643, 0px 4px 12px #4d2643;
+  --head-shadow: 0px 2px 20px #a12256, 0px 10px 14px #bf2a67,
+    8px 4px 12px #e6347c;
+}
