@@ -1462,9 +1462,10 @@ gap: var(--gap-xl);
   z-index: 2;
 }
 .demo-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-base);
   max-width: 60rem;
-  height: 100vh;
-  z-index: 3;
 }
 .demo-figure {
   align-self: stretch;
@@ -1472,45 +1473,36 @@ gap: var(--gap-xl);
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 2rem var(--padding-xl);
   box-sizing: border-box;
 }
 .demo-figure img {
   width: 100%;
   position: relative;
-  max-width: 56.25rem;
+  max-width: 47rem;
   overflow: hidden;
   max-height: 100%;
   object-fit: cover;
   min-width: 20rem;
 }
 .demo-txt {
+  max-width: 900px;
   line-height: 180%;
   font-size: var(--desktop-body-size);
   font-family: var(--desktop-body);
-  padding-bottom: var(--padding-45xl);
+  padding: 2rem 0;
 }
 .demo-content .txt-pink {
   color: #ff4d96;
   font-weight: 600;
   text-shadow: #e6347c;
 }
-.frame-parent {
-  height: 45.438rem;
-  width: 41.875rem;
-  position: absolute;
-  margin: 0;
-  right: 0rem;
-  bottom: 7rem;
+.demo-container .frame-parent {
+  display: flex;
+  justify-content: center;
 }
-.frame-parent img {
-  position: absolute;
-  top: 0;
-  left: 2.5rem;
-  width: 39.375rem;
-  height: 55.75rem;
+.demo-container .frame-parent img {
+  width: 50rem;
   object-fit: cover;
-  z-index: 2;
 }
 .icon-demo-logo {
   position: absolute;
@@ -1526,13 +1518,9 @@ gap: var(--gap-xl);
   max-height: 100%;
 }
 .platforms-counts-demo {
-  position: absolute;
-  width: 100%;
-  bottom: 15rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0 10.75rem;
+  justify-content: center;
   gap: var(--gap-21xl);
 }
 .platforms-counts-demo img {
@@ -1694,28 +1682,19 @@ gap: var(--gap-xl);
 
   /* - - - Demo page 1125 - - - */
   .main-demo-container {
-    padding: 5rem 0;
+    padding: 7rem 0 4rem;
   }
   .main-demo-container .demo-container {
     padding: 0 var(--padding-32md);
   }
-  .demo-figure {
-    padding: 1rem var(--padding-xl);
+  .demo-figure img {
+    max-width: 40rem;
   }
-  .demo-txt {
-    padding-bottom: var(--padding-21xl);
+  .demo-container .demo-txt {
+    padding: 0 0 var(--padding-21xl);
   }
-  .frame-parent {
-    right: 5rem;
-    bottom: 6rem;
-  }
-  .platforms-counts-demo {
-    width: auto;
-    bottom: 1rem;
-    position: absolute;
-    justify-content: space-evenly;
-    padding: 0 12.75rem;
-    gap: 1.5rem;
+  .demo-container .frame-parent img {
+    max-width: 100%;
   }
 
   /* - - - Home page 1125 - - - */
@@ -1883,19 +1862,14 @@ gap: var(--gap-xl);
   .main-demo-container .icon-demo-logo {
     top: 0;
   }
+  .demo-figure img {
+    max-width: 35rem;
+  }
   .demo-txt {
     font-size: 1.25rem;
   }
-  .frame-parent {
-    right: -10rem;
-    bottom: -12rem;
-  }
-  .frame-parent img {
-    width: auto;
-    height: 40.75rem;
-  }
-  .platforms-counts-demo {
-    bottom: -2rem;
+  .demo-container .frame-parent img {
+    max-width: 100%;
   }
   /* - - - Demo Modal 800 - - - */
   .content-modal-partner .heading-file-p2 {
@@ -2091,9 +2065,6 @@ gap: var(--gap-xl);
   }
 
   /* - - - Demo page 450 - - - */
-  .main-demo-container {
-    padding: 7rem 0 0 0;
-  }
   .main-demo-container .demo-container {
     padding: 0 var(--padding-base);
   }
@@ -2103,21 +2074,14 @@ gap: var(--gap-xl);
   .main-demo-container .demo-container .demo-txt {
     font-size: var(--desktop-body-size);
   }
-  .frame-parent {
-    right: -13rem;
-    bottom: -12rem;
-  }
-  .frame-parent img {
-    width: auto;
-    height: 40rem;
-  }
   .demo-content .boton-modal-h label {
     width: 100%;
   }
   .platforms-counts-demo {
-    display: none;
-    bottom: 2rem;
     gap: 1rem;
+  }
+  .platforms-counts-demo img  {
+    height: 1.8rem;
   }
   /* - - - Modal Demo 450 - - - */
   .content-modal-partner h2 {
