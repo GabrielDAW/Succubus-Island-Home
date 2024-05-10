@@ -230,10 +230,11 @@ body {
   height: 100vh;
   position: fixed;
   top: 0; left: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(8px);
   background-color: rgba(31, 8, 18, .9);
 }
 .popup .content-disclaimer {
@@ -439,6 +440,10 @@ body {
   font-family: var(--desktop-body);
   font-size: var(--heading-social-l-size);
   color: #ff4d96;
+}
+.content-modal-partner .donate__paypal img {
+  height: 64px;
+  filter: drop-shadow(0 0 0.5625vw #a12256) drop-shadow(0 0 0.5625vw #a12256);
 }
 .content-modal-hero .content-modal-partner img {
   vertical-align: middle;
@@ -1891,6 +1896,7 @@ gap: var(--gap-xl);
 
   /* - - - Disclaimer Home 800 - - - */
   .popup .content-disclaimer .disclaimer-modal-p2 {
+    padding-bottom: 0;
     font-size: var(--desktop-body-size);
   }
   .popup .content-disclaimer .buttons-disclaimer {
@@ -2124,12 +2130,12 @@ gap: var(--gap-xl);
   /* - - - Disclaimer Home 450 - - - */
   .popup .content-disclaimer {
     padding: 2rem 1.5rem;
+    gap: 1rem;
   }
   .popup .content-disclaimer h2 {
     font-size: var(--font-size-5xl);
   }
   .popup .content-disclaimer .disclaimer-modal-p2 {
-    padding-bottom: 0;
     font-weight: 500;
   }
   .popup .content-disclaimer .buttons-disclaimer button {
@@ -2184,6 +2190,9 @@ gap: var(--gap-xl);
   }
   .content-modal-partner .heading-modal-p2 {
     font-size: var(--desktop-body-size);
+  }
+  .content-modal-partner .donate__paypal img {
+    height: 56px;
   }
   .btn-cerrar-h {
     font-size: 1.5rem;

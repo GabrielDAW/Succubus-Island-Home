@@ -77,7 +77,9 @@
               <h2>Download 'Succubus Island'</h2>
               <p class="heading-modal-p1">This game is free but the developer accepts your support by letting you pay what you think is fair for the game.</p>
               <!--<p class="heading-file-p2"><span><i class="fa-solid fa-download"></i></span>SuccubusIsland_0.0.3.zip (59 MB)</p>-->
-              <a href="#" class="button-primary-large1"><img src="/css/font/LOGO-Paypal.svg" alt="paypal"></a>
+              <div id="donate-button-container">
+                <div class="donate__paypal" id="donate-button"></div>
+              </div>
               <a href="#" class="btn-download">No thanks, just take me to the downloads</a>
             </div>
           </div>
@@ -180,28 +182,9 @@
                 </p>
               </div>
               <div class="boton-modal-h">
-                <label for="btn-modal-h">
+                <label for="btn-modal-n">
                   Donate
                 </label>
-              </div>
-              <!--Ventana modal-->
-              <input type="checkbox" id="btn-modal-h">
-              <div class="container-modal-h">
-                <div class="content-modal-hero">
-                  <div class="btn-cerrar-h">
-                    <label for="btn-modal-h">
-                      <i class="fa-solid fa-xmark"></i>
-                    </label>
-                  </div>
-                  <div class="content-modal-partner">
-                    <div class="modal-logo">
-                      <img src="./css/font/Logo-Positivo-C.svg" alt="Succubus Island logo">
-                    </div>
-                    <p class="heading-modal-p1">Hello everyone! We're thrilled to share the free demo of our upcoming game, 'Succubus Island.' To complete the full game and deliver the best possible experience, we need your support.</p>
-                    <p class="heading-modal-p2">Thank you for your generosity and for being part of this exciting adventure!</p>
-                    <a href="#" class="button-primary-large1"><img src="/css/font/LOGO-Paypal.svg" alt="paypal"></a>
-                  </div>
-                </div>
               </div>
             </div>
         </section>
@@ -263,6 +246,18 @@
           </div>
         </footer>
     </main>
+    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+    <script>
+        PayPal.Donation.Button({
+        env:'production',
+        hosted_button_id:'363CDKA4R3C3U',
+        image: {
+        src:'https://pics.paypal.com/00/s/ZGEzOGUyNTAtOWZhMC00Y2M5LThlNTQtN2EyYzVhNWQwYWE0/file.PNG',
+        alt:'Donate with PayPal button',
+        title:'PayPal - The safer, easier way to pay online!',
+        }
+        }).render('#donate-button');
+    </script>
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
