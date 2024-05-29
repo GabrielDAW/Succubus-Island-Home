@@ -1124,6 +1124,10 @@ body {
   font-size: var(--desktop-body-size);
   color: var(--color-white);
 }
+.footer-container .footer-mailto .footer__privacy:hover {
+  color: #ff4d96;
+  text-shadow: 0 0 1.9375vw #A12256, 0 0 3.9375vw #ff4d96;
+}
 /*.footer-list {
   flex-direction: row;
   padding: 0 25.031rem;
