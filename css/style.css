@@ -1119,6 +1119,11 @@ body {
   font-size: var(--silk-desktop-body-size);
   color: var(--color-white);
 }
+.footer-container .footer-mailto .footer__privacy {
+  font-family: var(--desktop-body);
+  font-size: var(--desktop-body-size);
+  color: var(--color-white);
+}
 /*.footer-list {
   flex-direction: row;
   padding: 0 25.031rem;
@@ -1139,7 +1144,47 @@ body {
   color: inherit;
   display: inline-block;
 }*/
-
+/* - - - - - - Policy Section - - - - - - */
+.container-policy {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+.docs-text {
+  margin-top: 1rem;
+  font-family: var(--desktop-body);
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: left;
+}
+.docs-text p {
+  margin-top: 1rem;
+}
+.docs{
+  margin-top: 2rem;
+  padding-top: var(--padding-32md);
+  border-top: 1px solid #ff4d96;
+}
+.docs .docs-title{
+  font-family: var(--desktop-body);
+  font-size: var(--font-size-19xl);
+  text-align: left;
+  line-height: 2rem;
+}
+.docs-text .disc {
+  list-style: disc;
+  padding-left: 1rem;
+}
+.docs-text ul {
+  margin-top: 1rem;
+}
+.docs-text .docs-mail {
+  display: inline-block;
+  padding-top: 1.5rem;
+  font-family: var(--desktop-body);
+  font-size: 2rem;
+  color: var(--color-white);
+}
 
 /* - - - - - - Characters Section - - - - - - */
 .main-characters-container {
@@ -1675,6 +1720,11 @@ gap: var(--gap-xl);
   .footer-container {
     max-width: 100%;
   }
+  /* - - - Privacy 1350 - - - */
+  .container-policy {
+    padding-left: var(--padding-61xl);
+    padding-right: var(--padding-61xl);
+  }
 
 }
 /* - - - - - - Media Max-Width 1125 - - - - - - */
@@ -1821,6 +1871,14 @@ gap: var(--gap-xl);
   }
   .footer-list {
     flex-wrap: nowrap;
+  }
+  /* - - - Privacy 1125 - - - */
+  .container-policy {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+  }
+  .docs .docs-title {
+    font-size: var(--font-size-5xl);
   }
 }
 /* - - - - - - Media Max-Width 800 - - - - - - */
@@ -2311,5 +2369,16 @@ gap: var(--gap-xl);
   /* - - - Characters 450 - - - */
   .char-title {
     font-size: var(--font-size-10xl);
+  }
+  /* - - - Policy 450 - - - */
+  .container-policy {
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+  }
+  .docs .docs-title {
+    font-size: var(--desktop-body-size);
+  }
+  .docs-text .docs-mail {
+    font-size: 1.5rem;
   }
 }
