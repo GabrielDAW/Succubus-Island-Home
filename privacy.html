@@ -16,126 +16,112 @@
     <title>Privacy Policy</title>
 </head>
 <body>
-    <header class="nav-main-container">
-        <div class="nav-container">
-          <div class="logo-container">
-            <a href="/home.html">
-              <img loading="lazy" alt="Succubus Island" width="auto" height="auto" src="./css/font/Logo-Positivo-A.svg"/>
+  <header class="nav-main-container">
+    <div class="nav-container">
+      <div class="logo-container">
+        <a href="/home.html">
+          <img loading="lazy" alt="Succubus Island" width="auto" height="auto" src="./css/font/Logo-Positivo-A.svg"/>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/demo.html" class="demo-link nav__link btn">DEMO</a>
+          </li>
+          <li class="nav__item">
+            <a href="/characters.html" class="nav__link btn">CHARACTERS</a>
+          </li>
+          <li class="nav__item">
+            <a href="/screens.html" class="nav__link btn">SCREENS</a>
+          </li>
+        </ul>  
+      </nav>
+      <div class="social-container">
+        <ul class="nav-icons">
+          <li class="link-social">
+            <a href="https://www.patreon.com/SuccubusIsland" target="_blank">
+              <i class="fa-brands fa-patreon"></i>
             </a>
-          </div>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="/demo.html" class="demo-link nav__link btn">DEMO</a>
-              </li>
-              <li class="nav__item">
-                <a href="/characters.html" class="nav__link btn">CHARACTERS</a>
-              </li>
-              <li class="nav__item">
-                <a href="/screens.html" class="nav__link btn">SCREENS</a>
-              </li>
-            </ul>  
-          </nav>
-          <div class="social-container">
-            <ul class="nav-icons">
-              <li class="link-social">
-                <a href="https://www.facebook.com/succubusisland" target="_blank">
-                  <i class="fa-brands fa-facebook"></i>
-                </a> 
-              </li>
-              <li class="link-social">
-                <a href="https://twitter.com/SuccubusIsland" target="_blank">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </a>  
-              </li>
-              <li class="link-social">
-                <a href="https://www.patreon.com/SuccubusIsland" target="_blank">
-                  <i class="fa-brands fa-patreon"></i>
-                </a>
-              </li>
-              <li class="link-social">
-                <a href="https://www.instagram.com/succubusisland" target="_blank">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-            <div class="button-modal-n">
-              <label for="btn-modal-n">download</label>
+          </li>
+          <li class="link-social">
+            <a href="https://succubusisland.itch.io/succubus-island" target="_blank">
+              <i class="fa-brands fa-itch-io"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="button-modal-n">
+          <label for="btn-modal-n">download game</label>
+        </div>
+        <!--Ventana modal-->
+        <input type="checkbox" id="btn-modal-n">
+        <div class="container-modal-h">
+          <div class="content-modal-hero">
+            <div class="btn-cerrar-h">
+              <label for="btn-modal-n">
+                <i class="fa-solid fa-xmark"></i>
+              </label>
             </div>
-            <!--Ventana modal-->
-            <input type="checkbox" id="btn-modal-n">
-            <div class="container-modal-h">
-              <div class="content-modal-hero">
-                <div class="btn-cerrar-h">
-                  <label for="btn-modal-n">
-                    <i class="fa-solid fa-xmark"></i>
-                  </label>
-                </div>
-                <div class="content-modal-partner">
-                  <div class="modal-logo">
-                    <img src="./css/font/Logo-Positivo-C.svg" width="auto" height="auto" alt="Succubus Island logo">
-                  </div>
-                  <h2>Download 'Succubus Island'</h2>
-                  <p class="heading-modal-p1">This game is free but the developer accepts your support by letting you pay what you think is fair for the game.</p>
-                  <!--<p class="heading-file-p2"><span><i class="fa-solid fa-download"></i></span>SuccubusIsland_0.0.3.zip (59 MB)</p>-->
-                  <div id="donate-button-container">
-                    <div class="donate__paypal" id="donate-button"></div>
-                  </div>
-                  <a href="#" class="btn-download">No thanks, just take me to the downloads</a>
-                </div>
+            <div class="content-modal-partner">
+              <div class="modal-logo">
+                <img src="./css/font/Logo-Positivo-C.svg" width="auto" height="auto" alt="Succubus Island logo">
               </div>
-            </div>
-            <div class="toggle_btn">
-              <i class="fa-solid fa-bars"></i>
+              <h2>Download 'Succubus Island'</h2>
+              <p class="heading-modal-p1">This game is free but the developer accepts your support by letting you pay what you think is fair for the game.</p>
+              <!--<p class="heading-file-p2"><span><i class="fa-solid fa-download"></i></span>SuccubusIsland_0.0.3.zip (59 MB)</p>-->
+              <div id="donate-button-container">
+                <div class="donate__paypal" id="donate-button"></div>
+              </div>
+              <a href="https://www.patreon.com/SuccubusIsland" class="btn-modal-patreon">
+                <img src="./css/font/social/PATREON_WORDMARK_1_BLACK_RGB.svg" alt="Patreon-logo" width="auto" height="auto">
+              </a>
+              <a href="https://succubusisland.itch.io/succubus-island" class="btn-modal-itchio">
+                <img src="./css/font/social/itchio-logo-white.svg" alt="Patreon-logo" width="auto" height="auto">
+              </a>
+              <a href="#" class="btn-download">No thanks, just take me to the downloads</a>
             </div>
           </div>
         </div>
-        <nav class="dropdown_menu">
-          <ul class="dropdown-links">
-            <li>
-              <a href="demo.html"><span class="demo-link-m">Demo</span></a>
-            </li>
-            <li>
-              <a href="characters.html">Characters</a>
-            </li>
-            <li>
-              <a href="screens.html">Screens</a>
-            </li>
-          </ul>
-          <ul class="dropdown-leng">
-            <li class="toggle_leng">
-              <i class="fa-solid fa-globe"></i>
-            </li>
-            <li><a href="/en">ENG</a></li>
-            <li><a href="/es">ESP</a></li>
-          </ul>
-          <ul class="dropdown-links-social">
-            <li class="link-social">
-              <a href="https://www.facebook.com/succubusisland" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-              </a> 
-            </li>
-            <li class="link-social">
-              <a href="https://twitter.com/SuccubusIsland" target="_blank">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>  
-            </li>
-            <li class="link-social">
-              <a href="https://www.patreon.com/SuccubusIsland" target="_blank">
-                <i class="fa-brands fa-patreon"></i>
-              </a>
-            </li>
-            <li class="link-social">
-              <a href="https://www.instagram.com/succubusisland" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-          <div class="dropdown-btn">
-            <label for="btn-modal-n">DOWNLOAD</label>
-          </div>
-        </nav>
-    </header>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <nav class="dropdown_menu">
+      <ul class="dropdown-links">
+        <li>
+          <a href="demo.html"><span class="demo-link-m">Demo</span></a>
+        </li>
+        <li>
+          <a href="characters.html">Characters</a>
+        </li>
+        <li>
+          <a href="screens.html">Screens</a>
+        </li>
+      </ul>
+      <ul class="dropdown-leng">
+        <li class="toggle_leng">
+          <i class="fa-solid fa-globe"></i>
+        </li>
+        <li><a href="/en">ENG</a></li>
+        <li><a href="/es">ESP</a></li>
+      </ul>
+      <ul class="dropdown-links-social">
+        <li class="link-social">
+          <a href="https://www.patreon.com/SuccubusIsland" target="_blank">
+            <i class="fa-brands fa-patreon"></i>
+          </a>
+        </li>
+        <li class="link-social">
+          <a href="https://succubusisland.itch.io/succubus-island" target="_blank">
+            <i class="fa-brands fa-itch-io"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="dropdown-btn">
+        <label for="btn-modal-n">DOWNLOAD GAME</label>
+      </div>
+    </nav>
+  </header>
     <main class="home">
         <section class="main-about-container">
             <div class="container-policy">
@@ -265,20 +251,23 @@
                 <div class="social">
                   <h3 class="social-title">Oficial Accounts</h3>
                   <div class="social-links">
+                    <a href="https://www.patreon.com/SuccubusIsland" target="_blank">
+                      <i class="fa-brands fa-patreon"></i>
+                    </a>
+                    <a href="https://succubusisland.itch.io/succubus-island" target="_blank">
+                      <i class="fa-brands fa-itch-io"></i>
+                    </a>
                     <a href="https://www.facebook.com/succubusisland" target="_blank">
-                      <img loading="lazy" alt="logo-facebook" src="./css/font/social/ri_facebook-fill.svg" width="56px" height="56px" />
+                      <i class="fa-brands fa-facebook-f"></i>
                     </a>
                     <a href="https://twitter.com/SuccubusIsland" target="_blank">
-                      <img loading="lazy" alt="logo-twitter" src="./css/font/social/akar-icons_x-fill.svg" width="56px" height="56px" />
-                    </a>
-                    <a href="https://www.patreon.com/SuccubusIsland" target="_blank">
-                      <img loading="lazy" alt="logo-patreon" src="./css/font/social/simple-icons_patreon.svg" width="56px" height="56px" />
+                      <i class="fa-brands fa-x-twitter"></i>
                     </a>
                     <a href="https://www.youtube.com/@SuccubusIsland" target="_blank">
-                      <img loading="lazy" alt="logo-youtube" src="./css/font/social/mdi_youtube.svg" width="56px" height="56px" />
+                      <i class="fa-brands fa-youtube"></i>
                     </a>
                     <a href="https://www.instagram.com/succubusisland" target="_blank">
-                      <img loading="lazy" alt="logo-instagram" src="./css/font/social/mdi_instagram.svg" width="56px" height="56px" />
+                      <i class="fa-brands fa-instagram"></i>
                     </a>
                   </div>
                 </div>
