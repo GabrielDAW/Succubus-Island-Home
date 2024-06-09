@@ -1447,8 +1447,6 @@ pointer-events: none;
 }
 
 .page-wrapper .char-list-wrapper .char-list-detail {
-  /*padding-left: 5.3125vw;
-  padding-right: 5.3125vw;*/
   display: grid;
   width: 100%;
   grid-auto-columns: 100%;
