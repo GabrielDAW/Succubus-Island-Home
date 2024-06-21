@@ -56,16 +56,16 @@ body {
   width: 100%;
 }
 /* - - - - - - Nav - - - - - - */
-.nav-container {
+.nav-main-container .nav-container {
   flex: 1;
   justify-content: space-between;
-  max-width: 80rem;
+  /*max-width: 80rem;*/
 }
 
 /* - - - - - - Logo - - - - - - */
-.logo-container img {
-  height: 3.875rem;
-  width: 9.125rem;
+.nav-container .logo-container img {
+  height: auto;
+  width: 13.125rem;
   position: relative;
   object-fit: cover;
 }
@@ -77,11 +77,11 @@ body {
   align-items: center;
   list-style: none;
   text-shadow: 0 0 0.9375vw #2e0c1b, 0 0 0.9375vw #6d3159;
-  gap: var(--gap-13xl);
 }
 /* - - - - - - Nav Links - - - - - - */
 .nav__list .nav__item .btn {
-  font-size: var(--silk-desktop-body-size);
+  padding: 0 2rem;
+  font-size: var(--desktop-body-size);
   color: var(--color-white);
   font-family: var(--desktop-body);
   text-transform: uppercase;
@@ -103,7 +103,8 @@ body {
   display: none;
 }
 .nav__list .demo-link {
-  text-shadow: 0 0 0.9375vw #e6347c, 0 0 0.9375vw #ff4d96, 0 0 0.9375vw #ff4d96;
+  filter: drop-shadow(0 0 0.9375vw #e6347c);
+  /*text-shadow: 0 0 0.9375vw #e6347c, 0 0 0.9375vw #ff4d96, 0 0 0.9375vw #ff4d96;*/
 }
 /* - - - - - - Nav Social - - - - - - */
 .social-container {
@@ -126,7 +127,7 @@ body {
   align-items: center;
 }
 .nav-icons .link-social i {
-  font-size: 24px;
+  font-size: 2rem;
   color: var(--color-white);
 }
 .nav-icons .link-social i:hover {
@@ -314,14 +315,14 @@ body {
   margin: 0 auto;
   width: 100%;
   height: 100vh;
-  background: url(/assets/images/mainherocontainer@3x.png) top/cover no-repeat;
+  background: url(/assets/images/Portada-Desktop.png) center/cover no-repeat;
 }
 
 .hero-container {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   max-width: 50rem;
   flex-direction: column;
   gap: 14.25rem;
@@ -350,6 +351,7 @@ body {
   justify-content: center;
 }
 .hero-container .hero-btn-container {
+  padding-bottom: 22vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,10 +425,7 @@ body {
   width: 100%;
   max-width: 800px;
   background: linear-gradient(45deg, #821946, #2E0C1B);
-  background-image: url(/assets/images/card-modal-img.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+  background: url(/assets/images/Modal\ 2.png) top / cover no-repeat;
   border-radius: 1rem;
   border: 1.5px solid #BF2A67;
   box-shadow: var(--shadow-btn-primary);
@@ -611,7 +610,7 @@ body {
 
 /* - - - - - - About Card - - - - - - */
 .about-card {
-  width: 65rem;
+  /*width: 65rem;*/
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -804,58 +803,58 @@ body {
 }
 
 /* - - - - - - Screens Card - - - - - - */
-.movies-list {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
-  list-style: none;
-}
-.movies-item a {
-  background-color: transparent;
-  color: inherit;
-  outline: none;
-  transition-behavior: normal;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-  transition-property: opacity;
-}
-.movies-item-thumb {
-  border-width: 2px;
-  padding: 2px;
-  border-color: #e6347c;
+.screens-container .video-container .image {
+  cursor: pointer;
+  background-size: cover;
+  border: 2px solid #e6347c;
+  overflow: hidden;
 }
 .movies-item-thumb-inner {
   position: relative;
-  
-}
-.movies-item-thumb-inner::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, .5);
-}
-.movies-item-thumb-inner::after {
-  margin: auto;
-  width: 60px;
-  height: 65px;
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: url(/assets/images/Play-Btn.png) no-repeat center / contain;
 }
 .movies-item-thumb-inner img {
-  backface-visibility: hidden;
+  height: 100%;
   width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
   vertical-align: bottom;
+}
+.movies-item-thumb-inner img:hover {
+  transform: scale(1.1);
+}
+
+.screens-container .popup-image {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background-color: rgba(31, 8, 18, .9);
+}
+.screens-container .popup-image img {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  border: 2px solid #e6347c;
+  object-fit: cover;
+}
+
+.screens-container .popup-image span {
+  padding-left: 0.8rem; padding-right: 0.8rem;
+  padding-bottom: 0.2rem;
+  position: absolute;
+  top: 2rem; right: 2rem;
+  font-size: 2.5rem;
+  color: white;
+  background-color: #55142E;
+  border-radius: 50%;
+  font-weight: bolder;
+  z-index: 100;
+  cursor: pointer;
 }
 
 
@@ -894,6 +893,7 @@ body {
   width: 100%;
   object-fit: cover;
   transition: .2s linear;
+  vertical-align: bottom;
 }
 
 .screens-container .video-container .video:hover video {
@@ -1697,6 +1697,80 @@ gap: var(--gap-xl);
   color: #BF2A67;
 }
 
+/* - - - - - - Download Page - - - - - - */
+.main-download-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 12rem 0;
+  box-sizing: border-box;
+  background: url(/assets/images/Portada-Download.png) center / cover no-repeat;
+  /*background: linear-gradient(180deg, #2e0c1b 22.66%, #1f0812);*/
+}
+.main-download-container .download-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-13xl);
+  list-style: none;
+}
+.download-card-container .card-platf {
+  border: 2px solid #e6347c;
+  padding: var(--padding-5xl) var(--padding-20xl);
+  gap: var(--space-sm);
+  background-image: linear-gradient(180deg, rgb(85, 20, 46) 0%, rgba(46, 12, 27, 0.3) 100%);
+  /*background: linear-gradient(89.11deg, #55142E, #2E0C1B);*/
+  box-shadow: 0px 0px 28.5714285714px #55142E;
+}
+.download-card-container .card-platf .card__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card-platf .card__content .card-title-so {
+  width: 25vh;
+  text-align: left;
+  line-height: 180%;
+  font-family: var(--desktop-body);
+  font-weight: 600;
+  font-size: var(--desktop-body-size);
+  color: var(--color-white);
+}
+.card-platf .card__content i {
+  font-size: 2rem;
+}
+.card-platf .card__content .card-platf__icon {
+  width: 24vw;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+.card-platf .card__content .card-plaf__button {
+  cursor: pointer;
+  border: 1px solid var(--color-mediumvioletred);
+  padding: var(--padding-5xs) var(--padding-5xl);
+  font-size: var(--silk-desktop-body-size);
+  line-height: 140%;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--desktop-body);
+  color: var(--color-white);
+  border-radius: var(--br-13xl);
+  background: linear-gradient(88.35deg, #e6347c, #ba2f80);
+  box-shadow: var(--shadow-btn-primary);
+}
+.card-platf .card__content .card-plaf__button:hover {
+  background: linear-gradient(45deg, #E6347C, #821946);
+  border: 1px solid #BF2A67;
+  transition: 0.2s
+}
 
 /* - - - - - - Media Max-Width 1700 - - - - - - */
 @media screen and (max-width: 1700px) {
@@ -1754,12 +1828,21 @@ gap: var(--gap-xl);
     gap: 4.25rem;
     max-width: 100%;
   }
-  /* - - - Characters Home page 1350 - - - */
+  /* - - - Home page 1350 - - - */
+  .nav-container .logo-container img {
+    width: 10.125rem;
+  }
+  .nav__list .nav__item .btn {
+    font-size: 1rem;
+  }
   /* - - - Screens 1350 - - - */
   .screens-container {
     padding: 0 var(--padding-32md);
   }
   .screens-container .popup-video video {
+    width: 95%;
+  }
+  .screens-container .popup-image img {
     width: 95%;
   }
   /* - - - Social 1350 - - - */
@@ -1827,6 +1910,10 @@ gap: var(--gap-xl);
   }
   .demo-container .frame-parent img {
     max-width: 100%;
+  }
+  /* - - - Download page 1125 - - - */
+  .main-download-container {
+    height: auto;
   }
 
   /* - - - Home page 1125 - - - */
@@ -1945,6 +2032,7 @@ gap: var(--gap-xl);
     font-size: var(--font-size-5xl);
   }
 }
+
 /* - - - - - - Media Max-Width 800 - - - - - - */
 @media screen and (max-width: 800px) {
   /* - - - Characters - Detail page 800 - - - */
@@ -2029,6 +2117,7 @@ gap: var(--gap-xl);
   }
   /* - - - Home page 800 - - - */
   .dropdown-links a {
+    filter: drop-shadow(0 0 0.9375vw #e6347c);
     font-size: var(--desktop-heading-lg-size);
   }
   .dropdown-leng li a {
@@ -2045,6 +2134,12 @@ gap: var(--gap-xl);
     align-items: stretch;
   }
   /* - - - Hero 800 - - - */
+  .nav-container .logo-container img {
+    width: 8.125rem;
+  }
+  .main-hero-container {
+    background: url(/assets/images/Portada-Tablet-mobile.png) center/cover no-repeat;
+  }
   /*.main-hero-container {
     height: 70vh;
   }*/
@@ -2202,6 +2297,29 @@ gap: var(--gap-xl);
   }
   .card-img .char-img {
     height: 350px;
+  }
+
+  /* - - - Download page 800 - - - */
+  .main-download-container {
+    background: url(/assets/images/Download-Tablet.png) center / cover no-repeat;
+  }
+  .main-download-container .download-body {
+    padding: 0 2rem;
+  }
+  .download-card-container {
+    gap: var(--gap-xl);
+  }
+  .download-card-container .card-platf .card__content {
+    justify-content: flex-start;
+  }
+  .card-platf .card__content .card-title-so {
+    width: auto;
+  }
+  .card-platf .card__content .card-plaf__button {
+    width: 100%;
+  }
+  .card-platf .card__content .card-platf__icon {
+    width: auto;
   }
 }
 /* - - - - - - Media Max-Width 450 - - - - - - */
@@ -2472,6 +2590,22 @@ gap: var(--gap-xl);
     font-size: var(--desktop-body-size);
   }
   .docs-text .docs-mail {
+    font-size: 1.5rem;
+  }
+  /* - - - Download page 450 - - - */
+  .main-download-container {
+    padding: 8rem 0;
+  }
+  .main-download-container .download-body {
+    padding: 0 1rem;
+  }
+  .download-card-container .card-platf {
+    padding: 1rem;
+  }
+  .card-platf .card__content .card-title-so {
+    font-size: 1rem;
+  }
+  .card-platf .card__content i {
     font-size: 1.5rem;
   }
 }
