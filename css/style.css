@@ -600,6 +600,7 @@ body {
   font-family: var(--desktop-body);
   font-size: var(--desktop-heading-lg-size);
   color: var(--color-deeppink);
+  text-shadow: 0 0 1.9375vw #A12256, 0 0 3.9375vw #ff4d96;
 }
 .about-text {
   line-height: 180%;
@@ -785,7 +786,7 @@ body {
 
 /* - - - - - - Screens - - - - - - */
 .main-screens-container {
-  padding: 8rem 0 4rem 0;
+  padding: 12rem 0 4rem 0;
   background: linear-gradient(180deg, #6d3159, #4b1c4c);
 }
 .screens-container {
@@ -1256,7 +1257,7 @@ body {
 /* - - - - - - Characters Section - - - - - - */
 .main-characters-container {
   width: 100vw;
-  padding: 8rem 0;
+  padding: 12rem 0;
   box-sizing: border-box;
   background: #1f0812;
 }
@@ -2207,6 +2208,9 @@ gap: var(--gap-xl);
     font-size: var(--font-size-7xl);
   }
   /* - - - Screens 800 - - - */
+  .main-screens-container {
+    padding: 8rem 0 4rem 0;
+  }
   .screens-container .video-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -2289,6 +2293,9 @@ gap: var(--gap-xl);
   }*/
 
   /* - - - Characters 800 - - - */
+  .main-characters-container {
+    padding: 8rem 0;
+  }
   .char-content {
     padding: 0 var(--padding-base);
   }
@@ -2301,6 +2308,7 @@ gap: var(--gap-xl);
 
   /* - - - Download page 800 - - - */
   .main-download-container {
+    padding: 8rem 0;
     background: url(/assets/images/Download-Tablet.png) center / cover no-repeat;
   }
   .main-download-container .download-body {
@@ -2485,10 +2493,6 @@ gap: var(--gap-xl);
   .about-title {
     font-size: var(--font-size-10xl);
     line-height: 140%;
-  }
-  .about-subtitle {
-    font-size: var(--font-size-lgi);
-    line-height: 160%;
   }
   .about-text {
     font-size: var(--silk-desktop-body-size);
