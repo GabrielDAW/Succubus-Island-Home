@@ -1701,7 +1701,7 @@ gap: var(--gap-xl);
 /* - - - - - - Download Page - - - - - - */
 .main-download-container {
   width: 100vw;
-  height: 100vh;
+  height: 80vw;
   padding: 12rem 0;
   box-sizing: border-box;
   background: url(/assets/images/Portada-Download.png) center / cover no-repeat;
@@ -1872,6 +1872,10 @@ gap: var(--gap-xl);
   .container-policy {
     padding-left: var(--padding-61xl);
     padding-right: var(--padding-61xl);
+  }
+  /* - - - Download 1350 - - - */
+  .main-download-container {
+    height: 100vw;
   }
 
 }
